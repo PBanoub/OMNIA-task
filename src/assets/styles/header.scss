@@ -1,0 +1,33 @@
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  .App-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 90px;
+  }
+  
+  .App-header {
+    display: block;
+    padding: 30px;
+  }
+  
+  .App-title {
+    width:40%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    @media (max-width: 768px) {
+      width:100%
+    }    
+  }
+  .app-title {
+    width: 100%;
+    position: relative;
+    color: #000;
+    margin-bottom: 70px;
+  }
+  

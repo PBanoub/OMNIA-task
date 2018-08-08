@@ -1,0 +1,68 @@
+.news-area {
+    .app-title {
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            font-weight: bold;
+            .app-title-content {
+                display: inline-block;
+                @media (min-width: 768px) {
+                    width: auto;
+                    text-align: left;
+                }
+            }
+        }
+        .search {
+            float: right;
+            color: #afafaf;
+            position: relative;
+            i {
+                position: absolute;
+                left: 16px;
+                top: 13px;
+                transition: .3s all ease;
+            }
+            [type=text] {
+                background-color: transparent;
+                border: 0px;
+                border-bottom: 1.5px solid;
+                width: 250px;
+                padding: 10px;
+                padding-left: 40px;
+                transition: .5s all ease-in-out;
+                &:focus {
+                    outline: none;
+                    border-color: #a1a1a1;
+                    background-color: rgba(238, 238, 238, .5);
+                    &~i {
+                        color: #919191;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .app-card-list {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-columns: auto auto auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .card {
+            display: inline-block;
+            .card-body {
+                white-space: normal;
+            }
+        }
+        @media (min-width: 768px) {
+            white-space: nowrap;
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: auto;
+            grid-auto-flow: row;
+        }
+    }
+}

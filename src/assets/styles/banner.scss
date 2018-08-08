@@ -1,0 +1,102 @@
+.banner{
+    top:0;
+    left:0;
+}
+.carousel {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.carousel .item .carousel-img{
+    transition: .5s all ease-in;
+    position: relative;
+    height: 100vh;
+    width: calc(100vw - 17px);
+}
+
+.carousel-inner {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 26% 84%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 26% 84%, 0 0);
+}
+.carousel-indicators{
+    display: none;
+}
+.carousel-control.right,.carousel-control.left{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #00bff3;
+    border: 1px solid #00bff3;
+    text-shadow: none;
+    background-color:#fff;
+    background-image:none;
+    left: 10%;
+    top: 50%
+}
+.carousel-control.left{
+    left: 5%;
+}
+.glyphicon-chevron-right:before {
+    content: "\e250";
+}
+.glyphicon-chevron-left:before {
+    content: "\e251";
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    margin-top: 0;
+    line-height: 36px;
+    font-size: 15px;
+    width: 100%;
+    left: 2px;
+    top: 0;
+}
+
+.carousel-control .glyphicon-chevron-left{
+    margin-left: 0;
+    left: -1px;
+}
+
+.carousel-control:hover{
+    opacity: 1;
+}
+.carousel .item .carousel-img:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: right -51px;
+    background-attachment: fixed;
+}
+.carousel .item:first-child .carousel-img:before{
+    background-image: url(../imgs/Omnia-Banner.jpg);    
+}
+.carousel .item:nth-child(2) .carousel-img:before{
+    background-image: url(../imgs/Dubai.jpg);
+    background-size: cover;
+    background-position: 0 ;
+}
+.carousel .item:nth-child(3) .carousel-img:before{
+    background-image: url(../imgs/Dubai_sea_architecture.jpg);    
+    background-size: cover;
+    background-position: 0 ;
+}
+.bannerCaption{
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
+    left: 5%;
+}
+.learnMore{
+    text-transform: uppercase;
+    background-color: #00bff3;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 10pt;
+    font-weight: bold;
+    border-radius: 20px;    
+}

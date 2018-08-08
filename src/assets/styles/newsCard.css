@@ -1,0 +1,39 @@
+.card {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  animation: getNews 1s ease; }
+  .card .card-header {
+    height: 270px;
+    width: 100%;
+    padding: 15px;
+    width: 100%;
+    background-size: cover;
+    color: #fff; }
+  .card .card-body {
+    padding: 25px;
+    background-color: #fff;
+    width: 100%; }
+    .card .card-body .newsTitle {
+      font-weight: bold;
+      font-size: 25px; }
+    .card .card-body .date {
+      font-size: 11px;
+      color: #000; }
+    .card .card-body .author {
+      transform: translate(0, 0);
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #8f8f8f;
+      font-size: 11px; }
+  .card:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer; }
+    .card:hover .author {
+      transform: translate(10px, 0); }
+
+@keyframes getNews {
+  from {
+    transform: translateY(80px);
+    opacity: .2; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
