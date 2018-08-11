@@ -1,10 +1,15 @@
+// ========= news Section ==========
 .news-area {
-    .app-title {
+    .list-title {
+        width: 100%;
+        position: relative;
+        color: #000;
+        margin-bottom: 70px;
         h1 {
             font-size: 32px;
             margin: 0;
             font-weight: bold;
-            .app-title-content {
+            .title-content {
                 display: inline-block;
                 @media (min-width: 768px) {
                     width: auto;
@@ -12,6 +17,8 @@
                 }
             }
         }
+        
+        // ========= Search Box Styles ==========
         .search {
             float: right;
             color: #afafaf;
@@ -42,6 +49,8 @@
             }
         }
     }
+
+    // ========= News List Styles ==========
     .app-card-list {
         display: grid;
         grid-column-gap: 20px;
@@ -49,12 +58,6 @@
         grid-template-columns: auto auto auto;
         &::-webkit-scrollbar {
             display: none;
-        }
-        .card {
-            display: inline-block;
-            .card-body {
-                white-space: normal;
-            }
         }
         @media (min-width: 768px) {
             white-space: nowrap;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {DropdownButton,Dropdown,MenuItem,Glyphicon,Button} from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/styles/header.css';
 
@@ -7,13 +8,23 @@ export default class Header extends React.Component {
     render() {
         return (
             <header className="App-header">
-                {/* <FontAwesomeIcon icon="faCoffee" />
-                <FontAwesomeIcon icon="check-square" />
-                <FontAwesomeIcon icon="fabCoffee" />
-                Popular gadgets come from vendors like:
-                <FontAwesomeIcon icon={['fab', 'apple']} />
-                <FontAwesomeIcon icon={['fab', 'microsoft']} />
-                <FontAwesomeIcon icon={['fab', 'google']} /> */}
+                <div className="container">
+                    <Dropdown bsStyle="Default">
+                        <Dropdown.Toggle>
+                            <Glyphicon glyph="menu-down" className="lang-ico pull-right"/>
+                            En
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <MenuItem eventKey="1">Ar</MenuItem>
+                            <MenuItem eventKey="2">Deu</MenuItem>
+                            <MenuItem eventKey="3" active>En</MenuItem>
+                            <MenuItem eventKey="4">Fr</MenuItem>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Button bsStyle="primary" className="menu-ico pull-right">
+                        <Glyphicon glyph="menu-hamburger"/>
+                    </Button>
+                </div>
             </header>
         )
     }

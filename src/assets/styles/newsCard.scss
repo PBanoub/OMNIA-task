@@ -1,8 +1,8 @@
+// ========= News Card Styles ==========
 .card {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
-    // transition: .25s;
-//   animation: App-logo-spin infinite 20s linear;
     animation: getNews 1s ease;
+    display: inline-block;
     .card-header {
         height: 270px;
         width: 100%;
@@ -15,6 +15,7 @@
         padding: 25px;
         background-color: #fff;
         width: 100%;
+        white-space: normal;
         .newsTitle {
             font-weight: bold;
             font-size: 25px;
@@ -39,13 +40,15 @@
         }
     }
 }
+
+// ========= News onLoad Animation ==========
 @keyframes getNews {
-    from { 
-      transform:translateY(80px);
-      opacity: .2;
+    from {
+        transform: translateY(80px);
+        opacity: .2;
     }
-    to { 
-      transform:translateY(0);
-      opacity: 1;
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}

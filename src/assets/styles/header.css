@@ -1,17 +1,49 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
 .App-header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  height: 90px; }
-
-.App-header {
+  height: 105px;
+  color: white;
   display: block;
-  padding: 30px; }
+  padding: 30px;
+  z-index: 8; }
+  .App-header .dropdown-toggle.btn {
+    background: none;
+    color: #fff;
+    border: none;
+    text-transform: uppercase; }
+    .App-header .dropdown-toggle.btn .lang-ico {
+      padding-top: 1px;
+      transition: .2s all ease-in-out; }
+    .App-header .dropdown-toggle.btn .caret {
+      visibility: hidden; }
+    .App-header .dropdown-toggle.btn:hover, .App-header .dropdown-toggle.btn:focus {
+      color: #fff;
+      background: none;
+      background-color: transparent; }
+    .App-header .dropdown-toggle.btn[aria-expanded="true"]:focus .lang-ico {
+      transform: rotate(180deg); }
+  .App-header .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0;
+    padding: 0;
+    color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15); }
+    .App-header .dropdown-menu li {
+      color: #fff; }
+    .App-header .dropdown-menu .active > a {
+      background-color: #00bff3; }
+  .App-header .menu-ico {
+    background: none;
+    border: none;
+    outline: none;
+    background-color: none; }
+    .App-header .menu-ico:hover, .App-header .menu-ico:focus {
+      background: none;
+      border: none;
+      outline: none;
+      background-color: none; }
 
 .App-title {
   width: 40%;
@@ -21,8 +53,30 @@
     .App-title {
       width: 100%; } }
 
-.app-title {
-  width: 100%;
+.App-footer {
+  margin-top: 150px;
+  height: 80px;
+  background-color: #323232;
+  color: #fff;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 30px 0; }
+
+.footer-menu li {
+  display: inline; }
+
+.footer-menu li a {
+  font-style: none;
+  color: #fff; }
+
+.footer-menu li a:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer; }
+
+.footer-menu li:after {
+  content: '|';
   position: relative;
-  color: #000;
-  margin-bottom: 70px; }
+  padding: 0 20px;
+  width: 5px;
+  height: 20px; }

@@ -1,38 +1,42 @@
-.news-area .app-title h1 {
-  font-size: 32px;
-  margin: 0;
-  font-weight: bold; }
-  .news-area .app-title h1 .app-title-content {
-    display: inline-block; }
-    @media (min-width: 768px) {
-      .news-area .app-title h1 .app-title-content {
-        width: auto;
-        text-align: left; } }
-
-.news-area .app-title .search {
-  float: right;
-  color: #afafaf;
-  position: relative; }
-  .news-area .app-title .search i {
-    position: absolute;
-    left: 16px;
-    top: 13px;
-    transition: .3s all ease; }
-  .news-area .app-title .search [type=text] {
-    background-color: transparent;
-    border: 0px;
-    border-bottom: 1.5px solid;
-    width: 250px;
-    padding: 10px;
-    padding-left: 40px;
-    transition: .5s all ease-in-out; }
-    .news-area .app-title .search [type=text]:focus {
-      outline: none;
-      border-color: #a1a1a1;
-      background-color: rgba(238, 238, 238, 0.5); }
-      .news-area .app-title .search [type=text]:focus ~ i {
-        color: #919191;
-        transform: rotate(90deg); }
+.news-area .list-title {
+  width: 100%;
+  position: relative;
+  color: #000;
+  margin-bottom: 70px; }
+  .news-area .list-title h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold; }
+    .news-area .list-title h1 .title-content {
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .news-area .list-title h1 .title-content {
+          width: auto;
+          text-align: left; } }
+  .news-area .list-title .search {
+    float: right;
+    color: #afafaf;
+    position: relative; }
+    .news-area .list-title .search i {
+      position: absolute;
+      left: 16px;
+      top: 13px;
+      transition: .3s all ease; }
+    .news-area .list-title .search [type=text] {
+      background-color: transparent;
+      border: 0px;
+      border-bottom: 1.5px solid;
+      width: 250px;
+      padding: 10px;
+      padding-left: 40px;
+      transition: .5s all ease-in-out; }
+      .news-area .list-title .search [type=text]:focus {
+        outline: none;
+        border-color: #a1a1a1;
+        background-color: rgba(238, 238, 238, 0.5); }
+        .news-area .list-title .search [type=text]:focus ~ i {
+          color: #919191;
+          transform: rotate(90deg); }
 
 .news-area .app-card-list {
   display: grid;
@@ -41,10 +45,6 @@
   grid-template-columns: auto auto auto; }
   .news-area .app-card-list::-webkit-scrollbar {
     display: none; }
-  .news-area .app-card-list .card {
-    display: inline-block; }
-    .news-area .app-card-list .card .card-body {
-      white-space: normal; }
   @media (min-width: 768px) {
     .news-area .app-card-list {
       white-space: nowrap;

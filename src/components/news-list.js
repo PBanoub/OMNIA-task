@@ -56,8 +56,8 @@ class NewsList extends React.Component {
 class Title extends React.Component {
     render() {
         return (
-            <section className="app-title">
-                <div className="app-title-content">
+            <section className="list-title">
+                <div className="title-content">
                     <h1>Latest News</h1>
                 </div>
                 <div className="search">
