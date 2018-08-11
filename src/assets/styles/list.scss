@@ -23,7 +23,7 @@
             float: right;
             color: #afafaf;
             position: relative;
-            i {
+            .glyphicon  {
                 position: absolute;
                 left: 16px;
                 top: 13px;
@@ -41,7 +41,7 @@
                     outline: none;
                     border-color: #a1a1a1;
                     background-color: rgba(238, 238, 238, .5);
-                    &~i {
+                    & ~ .glyphicon  {
                         color: #919191;
                         transform: rotate(90deg);
                     }
@@ -55,7 +55,7 @@
         display: grid;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         &::-webkit-scrollbar {
             display: none;
         }

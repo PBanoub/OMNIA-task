@@ -12,6 +12,7 @@ export default class Card extends React.Component {
     }
 }
 
+// =====Card Header render
 class CardHeader extends React.Component {
     render() {
         const image = this.props.image;
@@ -24,7 +25,7 @@ class CardHeader extends React.Component {
     }
 }
 
-
+// =====Card Body render
 class CardBody extends React.Component {
     render() {
         var date = new Date(this.props.date)

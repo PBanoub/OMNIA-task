@@ -1,6 +1,5 @@
 import React from 'react';
 import {DropdownButton,Dropdown,MenuItem,Glyphicon,Button} from 'react-bootstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/styles/header.css';
 
 export default class Header extends React.Component {
@@ -9,7 +8,8 @@ export default class Header extends React.Component {
         return (
             <header className="App-header">
                 <div className="container">
-                    <Dropdown bsStyle="Default">
+                    {/* // =====Language DropDown                 */}
+                    <Dropdown id="Language-dropdown" bsStyle="Default">
                         <Dropdown.Toggle>
                             <Glyphicon glyph="menu-down" className="lang-ico pull-right"/>
                             En
@@ -29,4 +29,3 @@ export default class Header extends React.Component {
         )
     }
 }
-

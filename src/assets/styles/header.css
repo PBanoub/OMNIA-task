@@ -45,14 +45,6 @@
       outline: none;
       background-color: none; }
 
-.App-title {
-  width: 40%;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  @media (max-width: 768px) {
-    .App-title {
-      width: 100%; } }
-
 .App-footer {
   margin-top: 150px;
   height: 80px;

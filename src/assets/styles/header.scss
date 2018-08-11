@@ -1,3 +1,4 @@
+//============ Header styles =================
 .App-header{
   position: absolute;
   width: 100%;
@@ -8,6 +9,7 @@
   display: block;
   padding: 30px;
   z-index: 8;
+  //============ language dropdown styles =================  
   .dropdown-toggle.btn{
     background: none;
     color: #fff;
@@ -46,6 +48,7 @@
       background-color: #00bff3;
     }
   }
+  //============ Right Menu styles =================
   .menu-ico {
     background: none;
     border: none;
@@ -59,16 +62,7 @@
     }
   }
 }
-
-.App-title {
-  width:40%;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  @media (max-width: 768px) {
-    width:100%
-  }
-}
-
+//============ footer styles =================
 .App-footer{
   margin-top: 150px;
   height: 80px;

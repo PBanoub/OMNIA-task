@@ -1,4 +1,5 @@
 import React from 'react';
+import {Glyphicon} from 'react-bootstrap';
 import '../assets/styles/list.css';
 import { getNews } from '../news';
 import Card  from './card';
@@ -9,11 +10,12 @@ class NewsList extends React.Component {
         this.state = { posts: [], refreshing: true,searchValue:'',lastChar:'' };
         this.fetchNews = this.fetchNews.bind(this);
     }
-
+    
     componentDidMount() {
         this.fetchNews();
     }
-
+    
+    //========= Fetching News
     fetchNews(searchVal) {
         var searchfor='Latest News';
         var sortBy='publishedAt';
@@ -25,6 +27,8 @@ class NewsList extends React.Component {
         getNews(url).then(posts => this.setState({ posts, refreshing: false }))
         .catch(() => this.setState({ refreshing: false }));
     }
+
+    //=========event listener on search input changes   
     handleSrchChange (event) {
         this.setState({
             searchValue : event.target.value,
@@ -34,15 +38,16 @@ class NewsList extends React.Component {
                 this.fetchNews(this.state.searchValue);
              }
         });
-
-
     }
+
+    //========= rendering news list
     render() {
         return (
             <div className="container news-area">
                 <Title onSearch={event => this.handleSrchChange(event)}/>
                 <div className="app-card-list" id="app-card-list">
                     {
+                    //========= rendering news Cards        
                         Object
                         .keys(this.state.posts)
                         .map(key => <Card key={key} index={key} details={this.state.posts[key]} />)
@@ -52,7 +57,7 @@ class NewsList extends React.Component {
         )
     }
 }
-
+    //========= separate title component
 class Title extends React.Component {
     render() {
         return (
@@ -60,9 +65,10 @@ class Title extends React.Component {
                 <div className="title-content">
                     <h1>Latest News</h1>
                 </div>
+                {/* ========= Search Input */}
                 <div className="search">
                     <input type="text" name="search" placeholder="SEARCH NEWS" onChange={this.props.onSearch}/>
-                    <i className="fa fa-search"></i>
+                    <Glyphicon glyph="search"/>
                 </div>
             </section>
         )
